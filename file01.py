@@ -1,3 +1,5 @@
+from time import time, strftime, localtime
+
 if __name__ == '__main__':
-    from time import time, ctime
-    print(f'{ctime(time())}')
+
+    print(strftime("%H:%M:%S", localtime()))
